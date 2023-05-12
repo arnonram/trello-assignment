@@ -7,7 +7,10 @@ public static class LoadAppSettings
 
     public static IConfigurationSection GetAppSettings()
     {
-        var configBuilder = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+        var isTest = Environment.GetEnvironmentVariable("ENV") ?? "dev";
+        var appSettingsfileToUse = isTest == "test" ? "appsettings.test.json" : "appsettings.json";
+        Console.WriteLine($"Running tests with: {appSettingsfileToUse}");
+        var configBuilder = new ConfigurationBuilder().AddJsonFile(appSettingsfileToUse).Build();
         return configBuilder.GetSection("AppSettings");
     }
 }

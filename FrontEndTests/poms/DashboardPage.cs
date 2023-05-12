@@ -24,6 +24,3 @@ public class DashboardPage
         await _page.GetByTestId("create-board-submit-button").ClickAsync();
     }
 }
-
-
-

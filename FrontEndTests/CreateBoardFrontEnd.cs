@@ -33,6 +33,9 @@ public class CreateBoardFrontEnd : PageTest
     [SetUp]
     public void Setup()
     {
+        // This next bit here is to install the dependencies and browsers if needed
+        InstallPlaywrightBrowsers.InstallPlaywright();
+
         _loginPage = new LoginPage(Page);
         _dashboard = new DashboardPage(Page);
         _boardPage = new BoardPage(Page);

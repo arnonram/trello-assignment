@@ -6,7 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Utils;
 
 [TestFixture]
-public class CreateBoardTests
+public class CreateBoardApiTests
 {
     private readonly IConfigurationSection _appSettings = LoadAppSettings.GetAppSettings();
     private readonly string _boardName = "test board";
