@@ -1,4 +1,4 @@
-# Arnon's Knab Assignement
+# Arnon's Knab Assignment
 
 The project has two tests, an API test using [RestSharp](https://restsharp.dev/) as the REST API Client, and UI test using [Playwright](https://playwright.dev/dotnet/)
 
