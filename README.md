@@ -61,7 +61,7 @@ HEADED=1 dotnet test --filter "FrontEndTests" -- Playwright.BrowserName=firefox
 
 # Future Improvements
 
-- These couple of tests only perform "happy flows". Of course, adding negative and tests is a must.
+- These couple of tests only perform "happy flows". Of course, adding negative tests is a must.
 - Add better error handling to the API Client. This will allow us to better test failures, and verify we receive correct error messages.
 - Adding a propper logger (in the past I used Serilog). In testing I like to add lots of logs (especially in API testing), for any action or API call that is performed, what is sent, what is received, etc... If the test fails, as a tester I like to know exaclty what happened, and what data was used.
 - Some of the `Setup` and `Teardown` steps in both API and Front End tests would be moved to a more global Setup/Teardown file. We will not want to repeat these steps everytime once we have lots of tests.
