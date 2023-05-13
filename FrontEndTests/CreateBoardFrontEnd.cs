@@ -14,7 +14,6 @@ namespace FrontEndTests;
 public class CreateBoardFrontEnd : PageTest
 {
     private readonly IConfigurationSection _appSettings = LoadAppSettings.GetAppSettings();
-
     private Faker faker = new Faker();
     private LoginPage _loginPage;
     private DashboardPage _dashboard;
@@ -52,7 +51,6 @@ public class CreateBoardFrontEnd : PageTest
             client.DeleteBoard(board.Id);
         }
     }
-
 
     [Test]
     public async Task FirstTest()

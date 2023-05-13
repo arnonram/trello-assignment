@@ -17,7 +17,6 @@ public class CreateBoardApiTests
     public void Setup()
     {
         _client = new TrelloApiClient(_appSettings["apiKey"], _appSettings["apiToken"]);
-
         faker = new Faker();
     }
 
