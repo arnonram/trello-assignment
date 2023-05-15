@@ -1,4 +1,4 @@
-namespace ApiClient.Entities;
+namespace Tests.ApiClient.Entities;
 
 public class TrelloBoard
 {

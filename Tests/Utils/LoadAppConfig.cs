@@ -1,6 +1,6 @@
 using Microsoft.Extensions.Configuration;
 
-namespace Utils;
+namespace Tests.Utils;
 
 public static class LoadAppSettings
 {

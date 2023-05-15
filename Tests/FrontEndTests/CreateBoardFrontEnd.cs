@@ -1,12 +1,12 @@
-using FrontEndTests.poms;
+using Tests.FrontEndTests.poms;
 using Microsoft.Playwright;
 using Microsoft.Playwright.NUnit;
 using Bogus;
-using ApiClient;
-using Utils;
+using Tests.ApiClient;
+using Tests.Utils;
 using Microsoft.Extensions.Configuration;
 
-namespace FrontEndTests;
+namespace Tests.FrontEndTests;
 
 
 [Parallelizable(ParallelScope.Self)]

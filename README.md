@@ -11,10 +11,11 @@ The project has two tests, an API test using [RestSharp](https://restsharp.dev/)
 1. Start by running:
 
 ```bash
+dotnet restore
 dotnet build
 ```
 
-2. Update the `appsettings.json` file with appropriate data
+2. Update the `Tests/appsettings.json` file with appropriate data
 
 ---
 
@@ -25,7 +26,7 @@ dotnet build
 To run the API tests, run:
 
 ```bash
-dotnet test --filter "CreateBoardApiTests"
+dotnet test Tests --filter "CreateBoardApiTests"
 ```
 
 ---
@@ -46,13 +47,13 @@ Playwright needs it's own browser binaries in order to run smoothly. To make thi
 
 ```bash
 # Base command to run without installing any browser deps and run headless
-dotnet test --filter "FrontEndTests"
+dotnet test Tests --filter "FrontEndTests"
 
 # Install browser deps during test run and run headless
-PLAYWRIGHT_DEPS=1 dotnet test --filter "FrontEndTests"
+PLAYWRIGHT_DEPS=1 dotnet test Tests --filter "FrontEndTests"
 
 # Do not install browsers deps during test run and run Firefox headed
-HEADED=1 dotnet test --filter "FrontEndTests" -- Playwright.BrowserName=firefox
+HEADED=1 dotnet test Tests --filter "FrontEndTests" -- Playwright.BrowserName=firefox
 ```
 
 ---

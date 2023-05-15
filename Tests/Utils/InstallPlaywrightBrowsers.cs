@@ -1,4 +1,4 @@
-namespace Utils;
+namespace Tests.Utils;
 
 public static class InstallPlaywrightBrowsers
 {
