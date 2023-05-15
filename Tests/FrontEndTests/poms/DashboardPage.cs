@@ -1,7 +1,7 @@
 
 using Microsoft.Playwright;
 
-namespace FrontEndTests.poms;
+namespace Tests.FrontEndTests.poms;
 
 public class DashboardPage
 {

@@ -1,4 +1,4 @@
-namespace knab_assignment_cs;
+namespace Tests.knab_assignment_cs;
 
 using ApiClient;
 using Bogus;

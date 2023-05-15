@@ -1,8 +1,8 @@
 using System.Net;
-using ApiClient.Entities;
+using Tests.ApiClient.Entities;
 using RestSharp;
 
-namespace ApiClient;
+namespace Tests.ApiClient;
 public class TrelloApiClient
 {
     private const string BaseUrl = "https://api.trello.com/1";
